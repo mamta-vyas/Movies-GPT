@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { API_OPTIONS } from "../utils/constants";
 import { addPopularMovies } from "../utils/moviesSlice";
 
+
 const usePopularMovies = () => {
   // Fetch Data from TMDB API and update store
   const dispatch = useDispatch();

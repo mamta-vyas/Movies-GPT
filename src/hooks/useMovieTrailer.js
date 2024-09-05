@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react'
 import { API_OPTIONS } from '../utils/constants';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { addTrailerVideo } from '../utils/moviesSlice';
 
 const useMovieTrailer = (movieId) => {
     const dispatch = useDispatch();
         // fetching trailer video && updating the store with trailer video
-    
+    const trailerVideo = useSelector(store => store.movies.trailerVideo);
+
     const getMovieVideo = async () => {
     const data = await fetch("https://api.themoviedb.org/3/movie/" +
         movieId +
@@ -22,7 +23,9 @@ const useMovieTrailer = (movieId) => {
      dispatch(addTrailerVideo(trailer));
      };
      useEffect(() => {
+      if(!trailerVideo)
            getMovieVideo();
+     // eslint-disable-next-line react-hooks/exhaustive-deps
      }, []);
   return (
     <div>

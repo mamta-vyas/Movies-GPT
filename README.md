@@ -38,6 +38,15 @@
 - GPT Seacrch Page
 - GPT Srearch Bar
 - (Bonus)Multi-Language feature in our App
+- Get Search Google Gemini API key 
+- GPT search API call
+- fetched gptMovieSuggestions fromTMDB
+- created gptSlice added data
+- reused Movie List Component to make movie suggestion Container
+- Memoization
+- Adding .env file
+- Adding .env file to gitignore
+- Made our Site Responsive  
 
 
 # Features:
