@@ -1,4 +1,4 @@
-export const LOGO = "https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png"
+export const LOGO = "https://images.creativemarket.com/0.1.0/ps/7414066/1820/1214/m1/fpnw/wm1/logo-design-for-movie-production-company-01-.jpg?1575502358&s=c37b3e6a8863b415070b669f6c8a457c"
 
 export const USER_AVATAR = "https://avatars.githubusercontent.com/u/112095415?s=400&u=7437601668ac21e28d12c404c2139121bbbbc14d&v=4"
 
