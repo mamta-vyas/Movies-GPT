@@ -48,8 +48,7 @@
 - Adding .env file to gitignore
 - Made our Site Responsive  
 
-import { getAuth } from "firebase/auth";
-export const auth = getAuth();
+
 
 
 # Features:

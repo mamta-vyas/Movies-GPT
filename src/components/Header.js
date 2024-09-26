@@ -12,7 +12,7 @@ import React from "react";
 const Header = () => {
   const dispatch = useDispatch();
 const navigate = useNavigate();
-const  user = useSelector(store => store.user)
+const user = useSelector((store) => store.user.userInfo);
 const showGptSearch  = useSelector(store => store.gpt.showGptSearch)
  
 const handleSignOut = () => {
@@ -66,7 +66,7 @@ dispatch(changeLanguage(e.target.value))
  
 return (
     <div className="absolute w-screen px-4 md:px-8 py-0 md:py-2 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row  md:justify-between">
-       <img className ="w-24 md:w-60 mx-auto md:mx-0" src={LOGO} alt="logo" />
+       <img className ="w-16 md:w-32 mx-auto md:mx-0 md:bg-opacity-10" src={LOGO} alt="logo" />
        {user &&  (
         <div className="flex p-0 md:p-2">
          { showGptSearch && (<select className="p-2 m-2 bg-gray-900 text-white" onChange={handleLanguageChange}>
