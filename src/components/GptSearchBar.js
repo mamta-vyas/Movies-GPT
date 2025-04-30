@@ -44,7 +44,7 @@ if (!result.response) {
 // console.log(typeof(result.response.candidates[0]?.content?.parts[0]));
 // "Andaz Apna Apna,  Hera Pheri,  Chupke Chupke,  Jaane Bhi Do Yaaro,  Golmaal (1979)"
 
-const movies = result.response.candidates[0]?.content?.parts[0] || "";;
+const movies = result.response.candidates[0]?.content?.parts[0] || "";
 const gptMovies = (movies.text || "").split(",");
 // console.log(gptMovies);
 
