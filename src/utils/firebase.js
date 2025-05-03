@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+// import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
 
 // TODO: Add SDKs for Firebase products that you want to use
@@ -10,7 +10,7 @@ import { getAuth } from "firebase/auth";
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 
 const firebaseConfig = {
-  apiKey: "AIzaSyANba1p9Xxf_o-gi_V-HW_ExH-VF-z-Q2g",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: "movie-gpt-94687.firebaseapp.com",
   projectId: "movie-gpt-94687",
   storageBucket: "movie-gpt-94687.appspot.com",
@@ -21,6 +21,6 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+// const analytics = getAnalytics(app);
 
-export const auth = getAuth();
+export const auth = getAuth(app);
