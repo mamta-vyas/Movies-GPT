@@ -151,7 +151,7 @@ return(
                         </button>
                         <p className="py-2 md:py-4 text-base md:text-xl cursor-pointer"
                         onClick={toggleSignInForm}>
-                            {isSignInForm ? " New To Netflix? Sign Up Now" : "Already registered? Sign In"}
+                            {isSignInForm ? " New To Movie-GPT? Sign Up Now" : "Already registered? Sign In"}
                            
                         </p>
                      </form>
