@@ -52,7 +52,7 @@ useEffect(() => {
   // unsubscribe when component unmounts
   return () => unsubscribe();
 
-},[]);
+}, [dispatch, navigate]);
 
 const handleGptSearchClick = () => {
 dispatch(toggleGptSearchView());
